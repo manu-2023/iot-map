@@ -19,7 +19,14 @@ Start the frontend development server:
 npm start
 ```
 
-This runs the React dashboard (Leaflet map + alerts) at http://localhost:3000 by default.
+### 4️⃣ Run the Frontend
+
+```powershell
+cd frontend
+npm start
+```
+
+
 
 ### 3️⃣ Backend Setup (Node.js Bridge)
 
@@ -51,12 +58,6 @@ node server.js
 
 This connects to HiveMQ Cloud (or configured MQTT broker), subscribes to the GPS topic, and pushes data to your Firebase Realtime Database.
 
-### 4️⃣ Run the Frontend
-
-```powershell
-cd frontend
-npm start
-```
 
 
 ```
