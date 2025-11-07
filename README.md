@@ -58,54 +58,8 @@ cd frontend
 npm start
 ```
 
-Visit the dashboard in your browser. The map shows the smart case position and updates in real time when MQTT messages arrive and are forwarded to Firebase.
 
----
-
-## 🔧 MQTT / Raspberry Pi Notes
-
-- The Raspberry Pi should publish messages to the configured MQTT topic. Example JSON payload format that the backend expects:
-
-```json
-{
-  "deviceId": "case-001",
-  "lat": 37.4219983,
-  "lng": -122.084,
-  "timestamp": 1690000000000,
-  "alert": true
-}
 ```
 
-- On the Pi, you can use any MQTT client (e.g., mosquitto_pub, paho-mqtt) to publish messages to HiveMQ or your broker.
 
----
 
-## ✅ Security & Deployment Notes
-
-- Keep `serviceAccountKey.json` out of source control. Use environment variables or a secrets manager for production.
-- For production, restrict Firebase auth rules and use HTTPS for the dashboard.
-- Consider adding authentication to the frontend and backend to secure who can view and push device locations.
-
----
-
-## 🧭 Diagram & Improvements
-
-- Add an architecture diagram (Draw.io, Mermaid) replacing the placeholder image above.
-- Add a LICENSE file if you plan to publish the project.
-- Add a small GitHub Actions workflow for lint/test and optional deployment steps for frontend/backend.
-
----
-
-## 📁 File location
-
-This README was added to the `mqtt` folder to document the local MQTT-related instructions and overall project setup.
-
----
-
-If you want, I can also:
-
-- add a sample MQTT publisher script for Raspberry Pi (Python) that publishes the payload format above,
-- add a simple diagram (Mermaid) into this README,
-- or create a `.gitignore` entry reminder for `backend/serviceAccountKey.json`.
-
-Let me know which follow-up you'd like.
