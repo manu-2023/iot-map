@@ -26,6 +26,13 @@ npm start
 cd ../backend
 npm install
 ```
+### ▶️ Run the Backend
+
+```powershell
+cd backend
+node server.js
+```
+
 
 🔐 Add Firebase Service Account Key
 
@@ -41,12 +48,6 @@ backend/serviceAccountKey.json
 
 ⚠️ Never commit this file to GitHub — it contains sensitive credentials. Add it to your `.gitignore` if it isn't already.
 
-### ▶️ Run the Backend
-
-```powershell
-cd backend
-node server.js
-```
 
 This connects to HiveMQ Cloud (or configured MQTT broker), subscribes to the GPS topic, and pushes data to your Firebase Realtime Database.
 
