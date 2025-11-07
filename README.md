@@ -29,7 +29,6 @@ npm install
 ### ▶️ Run the Backend
 
 ```powershell
-cd backend
 node server.js
 ```
 
