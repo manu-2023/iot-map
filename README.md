@@ -35,20 +35,14 @@ node server.js
 
 🔐 Add Firebase Service Account Key
 
-Go to your Firebase Console → Project Settings → Service Accounts
 
-Click “Generate new private key”
-
-Save the downloaded file as:
 
 ```text
 backend/serviceAccountKey.json
 ```
 
-⚠️ Never commit this file to GitHub — it contains sensitive credentials. Add it to your `.gitignore` if it isn't already.
 
 
-This connects to HiveMQ Cloud (or configured MQTT broker), subscribes to the GPS topic, and pushes data to your Firebase Realtime Database.
 
 
 
