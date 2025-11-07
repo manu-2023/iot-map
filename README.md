@@ -19,14 +19,6 @@ Start the frontend development server:
 npm start
 ```
 
-### ▶️ Run the Frontend
-
-```powershell
-cd frontend
-npm start
-```
-
-
 
 ### 4️⃣Backend Setup (Node.js Bridge)
 
