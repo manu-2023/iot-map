@@ -19,7 +19,7 @@ Start the frontend development server:
 npm start
 ```
 
-### 4️⃣ Run the Frontend
+### ▶️ Run the Frontend
 
 ```powershell
 cd frontend
@@ -28,7 +28,7 @@ npm start
 
 
 
-### 3️⃣ Backend Setup (Node.js Bridge)
+### 4️⃣Backend Setup (Node.js Bridge)
 
 ```powershell
 cd ../backend
@@ -49,7 +49,7 @@ backend/serviceAccountKey.json
 
 ⚠️ Never commit this file to GitHub — it contains sensitive credentials. Add it to your `.gitignore` if it isn't already.
 
-▶️ Run the Backend
+### ▶️ Run the Backend
 
 ```powershell
 cd backend
