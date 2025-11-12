@@ -14,15 +14,14 @@ L.Icon.Default.mergeOptions({
 
 // Firebase config
 const firebaseConfig = {
-  apiKey: "AIzaSyBF2TFk_uMcT0E6kJhEOaWNnHZmKf8qzLI",
-  authDomain: "smart-phone-tracker-beb26.firebaseapp.com",
-  databaseURL:
-    "https://smart-phone-tracker-beb26-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "smart-phone-tracker-beb26",
-  storageBucket: "smart-phone-tracker-beb26.firebasestorage.app",
-  messagingSenderId: "703788502681",
-  appId: "1:703788502681:web:9f3116dc4b1692bc9d7208",
-  measurementId: "G-0TXD7C7705"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
 };
 
 function App() {
