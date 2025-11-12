@@ -23,19 +23,4 @@ This project — **Pick Pocket Detection using MQTT Protocol** — demonstrates 
 - Fetches GPS data from **Firebase**.
 - Displays live coordinates and movement on an interactive map.
 
-## 🚀 Technologies Used
-- **MQTT Protocol**: For lightweight messaging between devices.
-- **HiveMQ Cloud**: As the MQTT broker.
-- **Firebase Realtime Database**: For storing GPS data.
-- **React.js**: For the frontend visualization.
-- **Node.js**: For backend data handling.
-
-## 🌟 Features
-- Real-time GPS data publishing and retrieval.
-- Cloud-based data storage and processing.
-- Interactive map visualization of GPS coordinates.
-
-## 🛠️ How It Works
-1. The GPS module continuously publishes location data to the HiveMQ Cloud.
-2. The Node.js backend listens to the HiveMQ Cloud, retrieves the GPS data, and updates Firebase.
-3. The React.js frontend fetches the data from Firebase and displays it on a map, showing the current location and movement path.
+## Check the README.md files inside the frontend and backend folders for detailed information.
