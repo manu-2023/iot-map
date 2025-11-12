@@ -23,4 +23,4 @@ This project — **Pick Pocket Detection using MQTT Protocol** — demonstrates 
 - Fetches GPS data from **Firebase**.
 - Displays live coordinates and movement on an interactive map.
 
-## Check the README.md files inside the frontend and backend folders for detailed information.
+## Check the readme.md files inside the frontend and backend folders for detailed information.
