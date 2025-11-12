@@ -1,34 +1,34 @@
-// ================================================================
-//  IoT Bridge: HiveMQ Cloud  →  Firebase Realtime Database
-// ================================================================
-
 import mqtt from "mqtt";
 import admin from "firebase-admin";
 import { readFileSync } from "fs";
+import dotenv from "dotenv";
 
-// ---------- 1️⃣  Load Firebase Service Account ----------
+
+
 const serviceAccount = JSON.parse(
-  readFileSync("./serviceAccountKey.json", "utf8")
+  readFileSync("please add your file name of service account key", "utf8")
 );
 
 // Initialize Firebase Admin SDK
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://smart-phone-tracker-beb26-default-rtdb.asia-southeast1.firebasedatabase.app/" // 👈 replace with your own
+  databaseURL: process.env.FIREBASE_DATABASE_URL // Load from .env
 });
 
 const db = admin.database();
 
 // ---------- 2️⃣  HiveMQ Cloud Connection Config ----------
+dotenv.config();
+
 const options = {
-  host: "6d1f47954fab4dc0b8e4b329bb9aace6.s1.eu.hivemq.cloud",
-  port: 8883,
-  protocol: "mqtts",     // secure TLS connection
-  username: "smartbridge",   // your HiveMQ username
-  password: "Smartbridge123" // your HiveMQ password
+  host: process.env.MQTT_HOST,
+  port: parseInt(process.env.MQTT_PORT, 10),
+  protocol: process.env.MQTT_PROTOCOL,
+  username: process.env.MQTT_USERNAME,
+  password: process.env.MQTT_PASSWORD
 };
 
-const TOPIC = "smartcase/test";
+const TOPIC = process.env.MQTT_TOPIC;
 
 // ---------- 3️⃣  Connect to HiveMQ Cloud ----------
 console.log("🔌 Connecting to HiveMQ Cloud...");
